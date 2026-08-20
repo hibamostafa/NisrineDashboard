@@ -7,8 +7,9 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const BASE_URL = "https://nisrinedashboardbackend-1.onrender.com";
-const API_URL = `${BASE_URL}/api/projects`;
+// Use explicit backend URL
+const DEFAULT_BACKEND = import.meta.env.VITE_API_URL || "https://nisrinedashboardbackend-1.onrender.com";
+const API_URL = `${DEFAULT_BACKEND}/api/projects`;
 
 type Project = {
   id: number; 

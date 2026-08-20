@@ -12,7 +12,13 @@ const ProjectList = () => {
 
   const fetchProjects = () => {
     setLoading(true);
-    fetch(API_URL)
+    fetch(API_URL, {
+      method: 'GET',
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
       .then(res => {
         if (!res.ok) throw new Error("Network response was not ok");
         return res.json();

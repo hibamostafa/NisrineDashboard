@@ -8,19 +8,22 @@ function App() {
     <Router>
       <div className="min-h-screen bg-[#080808] text-white flex">
         {/* SIDE NAVBAR */}
-        <nav className="w-64 border-r border-white/5 p-8 flex flex-col gap-10 h-screen sticky top-0 bg-[#080808]">
-          <div className="font-serif italic text-2xl mb-4 text-amber-500">Studio Admin</div>
+        <nav className="w-16 sm:w-64 shrink-0 border-r border-white/5 p-3 sm:p-8 flex flex-col gap-10 h-screen sticky top-0 bg-[#080808]">
+          <div className="font-serif italic text-lg sm:text-2xl mb-4 text-amber-500 text-center sm:text-left">
+            <span className="sm:hidden">SA</span>
+            <span className="hidden sm:inline">Studio Admin</span>
+          </div>
           <div className="flex flex-col gap-6">
-            <Link to="/" className="flex items-center gap-3 text-zinc-400 hover:text-amber-500 transition-colors text-[10px] uppercase tracking-widest font-bold">
-              <LayoutGrid size={18} /> View Collection
+            <Link to="/" aria-label="View Collection" className="flex items-center justify-center sm:justify-start gap-3 text-zinc-400 hover:text-amber-500 transition-colors text-[10px] uppercase tracking-widest font-bold">
+              <LayoutGrid size={18} /> <span className="hidden sm:inline">View Collection</span>
             </Link>
-            <Link to="/add" className="flex items-center gap-3 text-zinc-400 hover:text-amber-500 transition-colors text-[10px] uppercase tracking-widest font-bold">
-              <PlusCircle size={18} /> Add Project
+            <Link to="/add" aria-label="Add Project" className="flex items-center justify-center sm:justify-start gap-3 text-zinc-400 hover:text-amber-500 transition-colors text-[10px] uppercase tracking-widest font-bold">
+              <PlusCircle size={18} /> <span className="hidden sm:inline">Add Project</span>
             </Link>
           </div>
           <div className="mt-auto border-t border-white/5 pt-8">
-            <a href="https://nisrinedashboardbackend-1.onrender.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-zinc-600 hover:text-white transition-colors text-[10px] uppercase tracking-widest">
-              <Home size={14} /> Main Website
+            <a href="https://nisrinedashboardbackend-1.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Main Website" className="flex items-center justify-center sm:justify-start gap-3 text-zinc-600 hover:text-white transition-colors text-[10px] uppercase tracking-widest">
+              <Home size={14} /> <span className="hidden sm:inline">Main Website</span>
             </a>
           </div>
         </nav>

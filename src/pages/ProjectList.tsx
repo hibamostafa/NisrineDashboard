@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Trash2, Home, FolderKanban, Plus, Loader2 } from 'lucide-react';
 
 // Pointing to your Cloud Backend (Render)
-const BASE_URL = import.meta.env.VITE_API_URL || "https://nisrinedashboardbackend-1.onrender.com";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://nisrinedashboardbackend.onrender.com";
 const API_URL = `${BASE_URL}/api/projects`;
 
 type Project = {

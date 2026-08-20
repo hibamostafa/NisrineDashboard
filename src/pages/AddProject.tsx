@@ -8,7 +8,7 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Keep the API configurable and avoid malformed URLs when VITE_API_URL ends in a slash.
-const DEFAULT_BACKEND = (import.meta.env.VITE_API_URL || "https://nisrinedashboardbackend-1.onrender.com").replace(/\/+$/, "");
+const DEFAULT_BACKEND = (import.meta.env.VITE_API_URL || "https://nisrinedashboardbackend.onrender.com").replace(/\/+$/, "");
 const API_URL = `${DEFAULT_BACKEND}/api/projects`;
 
 type Project = {

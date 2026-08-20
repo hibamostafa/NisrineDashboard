@@ -22,7 +22,7 @@ function App() {
             </Link>
           </div>
           <div className="mt-auto border-t border-white/5 pt-8">
-            <a href="https://nisrinedashboardbackend-1.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Main Website" className="flex items-center justify-center sm:justify-start gap-3 text-zinc-600 hover:text-white transition-colors text-[10px] uppercase tracking-widest">
+            <a href="https://nisrinedashboardbackend.onrender.com" target="_blank" rel="noopener noreferrer" aria-label="Main Website" className="flex items-center justify-center sm:justify-start gap-3 text-zinc-600 hover:text-white transition-colors text-[10px] uppercase tracking-widest">
               <Home size={14} /> <span className="hidden sm:inline">Main Website</span>
             </a>
           </div>
